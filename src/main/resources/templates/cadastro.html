@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="pt"  
+      xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout-padrao}">
+    <head>
+        <title>Cadastre-se</title> <!--layout:decorate="~{layout/layout-padrao}">   fragments para login e cadastro-->
+    </head>
+    <body>
+        <section layout:fragment="conteudo"> 
+
+            <div class="container">
+                <h1 class="d-flex justify-content-center">Notícias e Eventos</h1>
+                <!--<h3 class="d-flex  align-items-center justify-content-center">Quer saber de todos os eventos, notícias e mais informações sobre o Grupo para Inclusão de Cegos no Ensino Superior?
+                    Deixe seu contato com a gente.</h3>-->
+
+                <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+
+                            <div th:if="${param.success}">
+                                <div class="alert alert-info">Cadastro efetuado com sucesso!</div>
+                            </div>
+
+                            <form th:action="@{/cadastro}" th:object="${usuario}" method="post">
+
+                                <div class="row p-2">
+                                    <!-- <label for="nome">Nome:</label>-->
+                                    <input class="form-control" id="nome" th:field="*{nome}" placeholder="Nome" required autofocus/>  
+                                </div>
+
+                                <div class="row p-2">
+                                    <!--<label for="telefone">Telefone:</label>-->
+                                    <input class="form-control" id="email" th:field="*{email}" placeholder="E-mail" required/>  
+                                </div>
+                                
+                                <div class="row p-2">
+                                    <!-- <label for="email">Email:</label>-->
+                                    <input class="form-control" id="telefone" th:field="*{telefone}" placeholder="Telefone" required/>  
+                                </div>
+                                
+                                <div class="row p-2"> 
+                                    <!--<button type="submit" class="btn btn-dark ">Cadastrar</button>-->
+                                    <input class="btn btn-dark d-flex w-100 justify-content-center " type="submit" value="Registrar"/>
+                                </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

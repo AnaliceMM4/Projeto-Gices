@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html lang="pt" 
+      xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">  
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <!--<section >-->
+        <footer class="footer" id="rodape" th:fragment="footer"> <!--th:fragment="footer">-->
+            <p id="contato">Entre em contato</p>
+            <a>
+                <img th:src="@{/iconeGmail.png}" class="img-fluid " alt="Ícone do gmail" id="iconeGmail"/> gices.pb@utfpr.edu.br
+            </a>
+            
+            <div>
+                <a th:href="@{https://www.facebook.com/grupoinclusaocegosensinosupeior}">
+                    <img th:src="@{/iconeFacebook.png}" class="img-fluid" alt="Ícone do facebook" id="iconeFacebook"/>
+                </a>
+
+                <a th:href="@{https://www.youtube.com/channel/UCUSn4oXKabNlkf93ORXlB4w}">
+                    <img th:src="@{/iconeYoutube.png}" class="img-fluid" alt="Ícone do youtube" id="iconeYoutube"/>
+                </a>
+            </div>
+            <div class="bg-light dropdown-divider"></div>
+            <p> ©2022 por Analice Moschen </p>
+        </footer>
+       <!--</section>-->
+    </body>
+</html>

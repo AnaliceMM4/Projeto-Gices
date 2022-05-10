@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html lang="pt"  xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  
+      layout:decorate="~{layout/layout-padrao}">  
+
+    <head>
+        <title>Grupo de Pesquisa</title>
+    </head>
+    <body>
+        <section layout:fragment="conteudo">  
+            <div class="jumbotron">  
+                <div class="container">  
+                    <h1 class="display-3">Grupo de Pesquisa</h1>  
+                </div>
+            </div>
+
+
+            <div class="card-deck" id="cardGrupodePesquisa">
+                <div class="card">
+                    <img class="img-fluid" th:src="@{../profEliane.jpg}"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Profa. Dra. Eliane Maria de Bortoli Fávero</h5>
+                        <p class="card-text">Conteúdo adicional adicional adicional adicionaladicional adicional adicional adicional 
+                            adicional adicional adicional adicional adicional </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--<img class="card-img-top" src="../static/.">-->             
+                    <img th:src="@{..}" class="img-fluid"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Prof.......</h5>
+                        <p class="card-text">Conteúdo adicional adicional adicional adicionaladicional adicional adicional adicional 
+                            adicional adicional adicional adicional adicional </p>    
+                    </div>
+                </div>
+                <div class="card">
+                    <img th:src="@{..}" class="img-fluid"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Prof.......</h5>
+                        <p class="card-text">Conteúdo adicional adicional adicional adicionaladicional adicional adicional adicional 
+                            adicional adicional adicional adicional adicional</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img th:src="@{..}" class="img-fluid"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Prof.......</h5>
+                        <p class="card-text">Conteúdo adicional adicional adicional adicionaladicional adicional adicional adicional 
+                            adicional adicional adicional adicional adicional</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>     
+    </body>
+</html>

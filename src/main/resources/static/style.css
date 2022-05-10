@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.max p{
+    font-size: max(60px, 5vw);
+}
+.min p{
+    font-size: min(150px, 10vw);
+}*/
+
+@media screen and (max-width: 920px){
+    p{
+        font-size:16px;
+    }
+    h1{
+        font-size:30px;
+    }
+    .card-deck{
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/*.container{
+    max-width: 700px;
+    padding:45px 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+}*/
+#logo{
+    position: absolute;
+    left: 2.6%;
+    right: 83.74%;
+    top: 3.3%;
+    bottom: 82.59%;
+}
+
+#imagemPrincipal{
+    width: 100%;
+    height:150%;
+}
+
+#altoContraste{
+
+}
+
+#brancoPreto{
+    /*background-color: #000;
+     color: #FFFFFF;*/
+}
+
+nav{
+    top:3px;
+    bottom: 75%;
+    background-image: linear-gradient(180deg, rgba(255, 225, 90, 0.852187) 40.59%, #FFAC47 99.99%);
+}
+
+#navbarP{
+    top:18%;
+    font-size: 16px;
+    font-family: Candara;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    color: #3D3A3A;
+    /*font-weight: bold;*/
+    text-align: center;
+
+}
+
+/*-------------ACESSIBLIDADE-------------------*/
+#navbarAcessibilidade{
+    top:1px;
+    bottom: 55%;
+    background-image: rgba(238, 235, 235, 1);
+    font-size:13px;
+    font-weight: bold;
+    font-family: Tajawal;
+    line-height: 22px;
+    text-align: right;
+}
+
+#acessibilidade{
+    left:10%;
+    right: 17.92%;
+    top: 30%;
+    bottom: 94.75%;
+    font-size:30px;
+    font-family: Tajawal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#iconeAc{
+    font-size:30px;
+    left:100%;
+    top:20px;
+}
+/*--------------------------------/
+/*@media screen and (max-width: 768px){
+     nav{
+         height:60px;
+     }
+ }*/
+#iconeLampada{
+    height: 36px;
+    width: 38px;
+    left: 0px;
+    top: 5px;
+}
+
+#iconeMartelo{
+    height: 36px;
+    width: 38px;
+    left: 0px;
+    top: 50px;
+}
+#iconeBraile{
+    height: 36px;
+    width: 38px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeVideo{
+    height: 34px;
+    width: 36px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeFerramentasDigitais{
+    height: 34px;
+    width: 36px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeLive{
+    height: 36px;
+    width: 38px;
+    left: 0px;
+    top: 80px;
+}
+
+#subPagina{
+    width:450px;
+    top: 258px;
+    font-style: normal;
+    font-size: 16px;
+    line-height:35px;
+}
+
+#subPagina2{
+    width:350px;
+    top: 258px;
+    font-style: normal;
+    font-size: 16px;
+    line-height:35px;
+}
+
+#subPagina3{
+    width:350px;
+    top: 258px;
+    font-style: normal;
+    font-size: 16px;
+    line-height:35px;
+}
+
+#subPagina4{
+    width:300px;
+    top: 258px;
+    font-style: normal;
+    font-size: 16px;
+    line-height:35px;
+}
+
+#conteudo{
+    width: 100%;/*1150px*/
+    font-size:18px;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+
+#cardGrupodePesquisa{
+    height: 348px;
+    width: 1300px;
+    margin-left: 20px;
+    max-width: 100rem;
+    height: 24rem;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+h1{
+}
+
+h4{
+}
+
+h5{
+
+}
+/*
+font-family: Tajawal; font-size:20px;*/
+
+#contato{
+    text-align: center;
+    font-family: Tajawal;
+    font-size:22px;
+    font-style: normal;
+}
+
+footer{
+    bottom: 0%;
+    width:100%;
+    flex-shrink: 0;
+    text-align:center;
+    font-size:18px;
+    font-family: Tajawal;
+    padding:8px;
+    background-color:#1B1919;
+    color:#FFFFFF;
+}
+
+#iconeGmail{
+    height: 28px;
+    width: 28px;
+    left: 0px;
+    top: 80px;
+}
+
+
+#iconeFacebook{
+    height: 32px;
+    width: 30px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeYoutube{
+    height: 28px;
+    width: 26px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeBraile2{
+    height: 300px;
+    width: 350px;
+
+}
+
+#slides{
+    top: 20px;
+    height:320px;
+}
+
+
+
+
+

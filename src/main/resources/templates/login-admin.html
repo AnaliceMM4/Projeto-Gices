@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="pt"  
+      xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  
+      layout:decorate="~{layout/layout-padrao}"> 
+    <head>
+        <title>Login do Administrador</title>
+    </head>
+
+    <body>
+        <section layout:fragment="conteudo">  
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                        <div class="card card-signin my-5">
+                            <div class="card-body">
+                             
+                                <form th:action="@{/login}" method="post">
+
+                                    <div th:if="${param.error}" class="alert alert-danger" role="alert">
+                                        Administrador e/ou senha inválidos.
+                                    </div>
+                                    <div th:if="${param.logout}" class="alert alert-warning" role="alert">
+                                        Administrador saiu.
+                                    </div>
+                                    <div class="form-label-group row p-2">
+                                        <input type="text" name="username" class="form-control" placeholder="Login" required autofocus />
+                                    </div>
+
+                                    <div class="form-label-group row p-2">
+                                        <input type="password" name="password" class="form-control" placeholder="Senha" required/>
+                                    </div>
+
+                                    <div class="row p-2">
+                                        <input class="btn btn-dark d-flex w-100 justify-content-center " type="submit" value="Entrar"/>
+                                    </div>
+                                </form>
+
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

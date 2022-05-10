@@ -1,0 +1,101 @@
+<!DOCTYPE html>  
+<html lang="pt"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">  
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <section th:fragment="navbar">
+            <div class="dropdown-menu-left ml-auto bg-light" id="navbarAcessibilidade">
+                <!--<a th:onclick="@{#}" class="text-dark ml-3"><i class="fas">A+ </i></a>
+                <a th:href="@{#}" class="text-dark ml-3"><i class="fas">A- </i></a>-->
+                <a th:href="@{/acessibilidade}" class="text-dark ml-3"><i class="fas">Acessibilidade</i></a>
+                <a class="text-dark ml-3"><i class="fas" id="altoContraste">Alto Contraste</i></a> 
+                <a class="text-dark col-md-3"><i class="fas" id="brancoPreto">Branco e Preto </i></a><!--th:href="@{#}"-->
+                <a th:href="@{/cadastro}" class="text-dark col-md-3"><i class="fas">Cadastre-se</i></a>
+            </div>
+
+            <img th:src="@{/principalf.png}" alt="imagem principal" id="imagemPrincipal"/>
+            <a th:href="@{/}" id="logo"><img th:src="@{/logoCo.png}" class="img-fluid" alt="logo"/></a>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse side-nav" id="navbarNavDropdown" style="height:45px">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link ml-4 dropdown-toggle" id="navbarP" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    DEFICIÊNCIA VISUAL
+                                </a>
+                                <div class="dropdown-menu text bg-light" aria-labelledby="navbarSubpaginas">
+                                    <a class="bg-light dropdown-item" th:href="@{/o-que-e}" id="subPagina">O que é
+                                        <img th:src="@{/iconeLampada.png}" class="img-fluid" alt="Ícone de uma lâmpada" id="iconeLampada"/>
+                                    </a>
+                                    <a class="bg-light dropdown-item" th:href="@{/legislacao}" id="subPagina">Legislação
+                                        <img th:src="@{/iconeMartelo.png}" class="img-fluid" alt="Ícone de martelo" id="iconeMartelo"/>
+                                    </a>
+                                    <a class="bg-light dropdown-item" th:href="@{/deficientes-visuais}" id="subPagina">Deficientes visuais na matemática e engenharia
+                                        <img th:src="@{/iconeBraile.jpg}" class="img-fluid" alt="Ícone do braile" id="iconeBraile"/>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ml-4" th:href="@{/processo-de-ensino-aprendizagem}" id="navbarP">PROCESSO DE ENSINO APRENDIZAGEM</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle ml-4" id="navbarP" data-toggle="dropdown">
+                                    DEPOIMENTOS
+                                </a>
+                                <div class="dropdown-menu text bg-light" aria-labelledby="navbarSubpaginas">
+                                    <a class="bg-light dropdown-item" id="subPagina">Professores <!--th:href="@{#}"-->
+                                        <!--<img th:src="@{#}" alt="Ícone de uma lâmpada" id=""/>-->
+                                    </a>
+                                    <a class="bg-light dropdown-item" id="subPagina">Alunos cegos
+                                        <!-- <img th:src="@{#}"  alt="Ícone de martelo" id=""/>-->
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <!--<a class="nav-link dropdown-toggle ml-4" id="navbarP" data-toggle="dropdown">-->
+                                <a class="nav-link ml-4 dropdown-toggle" id="navbarP" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    RECURSOS
+                                </a>
+
+                                <div class="dropdown-menu bg-light" aria-labelledby="navbarSubpaginas">
+                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/recursos-tecnologicos}">Tecnológicos
+                                        <img th:src="@{/iconeFerramentasD.png}" class="img-fluid" alt="Ícone de ferramentas" id="iconeFerramentasDigitais"/>
+                                    </a>
+                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/materiais-concretos}">Materiais concretos
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link ml-4 dropdown-toggle" id="navbarP" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    EVENTOS
+                                </a>
+                                <div class="dropdown-menu bg-light" aria-labelledby="navbarSubpaginas">
+                                    <a class="bg-light dropdown-item" id="subPagina4" th:href="@{/lives}">Lives
+                                        <img th:src="@{/iconeLive.png}" class="img-fluid" alt="Ícone indicando a conexão de pessoas - Live" id="iconeLive"/>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link ml-4" th:href="@{/grupo-de-pesquisa}" id="navbarP">GRUPO DE PESQUISA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </body>
+</html>

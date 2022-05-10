@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt"  xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  
+      layout:decorate="~{layout/layout-padrao}">  
+    <head>
+        <title>Recursos Tecnológicos</title>
+    </head>
+    <body>
+        <section layout:fragment="conteudo">  
+            <form action="@{recursos-tecnologicos}" method="post">
+            </form>
+            <div class="jumbotron"> 
+                <div class="container">
+                    <h1 class="display-3">Recursos Tecnológicos</h1>
+                    <p>
+                        Muitos recursos têm sido utilizados para apoiar o processo de ensino-aprendizagem de alunos cegos.
+                        Dentre as opções tradicionalmente utilizadas no ambiente escolar, pode-se citar: o sistema Braille, o geoplano, o multiplano, o soroban e ábacos adaptados.
+                    </p>
+                </div>
+            </div>
+            <!--
+            <div style="display:inline-block;vertical-align:top;">
+                <img src="https://loremflickr.com/320/240" alt="img"/>
+            </div>
+            <div style="display:inline-block;">
+                <p>
+                    O Sistema Braille corresponde a um sistema de escrita e 
+                    leitura tátil para as pessoas cegas. 
+                </p>
+            </div>
+            <!--<div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                    </div>
+                </div>
+            <div style="display:inline-block;vertical-align:top;">
+                <div class="card">
+                <img src="https://loremflickr.com/320/240" alt="img"/>
+            </div>
+
+            <div style="display:inline-block;">
+                <h5 class="card-title">Sistema Braille</h5>    class="card-text"
+                <p>O Sistema Braille corresponde a um sistema de escrita e 
+                    leitura tátil para as pessoas cegas. 
+                    Foi inventado em 1825 pelo francês Louis Braille, um jovem cego. 
+                    Esse sistema baseia-se em seis pontos em relevo dispostos em duas colunas, possibilitando a formação de 63 símbolos diferentes,
+                    que são empregados em textos literários nos diversos idiomas, como também nas simbologias matemática e científica, 
+                    em geral, na música e, recentemente, na informática (LEMOS e CERQUEIRA, 2014).</p>
+            </div>-->
+
+            <div class="container marketing">
+
+                <h1 class="d-flex">Recursos Tradicionais</h1>
+
+                <hr class="featurette-divider"/>
+
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">Sistema Braille <span class="text-muted"></span></h2>
+                            <p class="lead">O Sistema Braille corresponde a um sistema de escrita e leitura tátil para as pessoas cegas. 
+                                Foi inventado em 1825 pelo francês Louis Braille, um jovem cego. 
+                                Esse sistema baseia-se em seis pontos em relevo dispostos em duas colunas, possibilitando a formação de 63 símbolos diferentes,
+                                que são empregados em textos literários nos diversos idiomas, como também nas simbologias matemática e científica, 
+                                em geral, na música e, recentemente, na informática (LEMOS e CERQUEIRA, 2014).</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="featurette-image img-fluid" align="left" th:src="@{https://loremflickr.com/320/240}" alt="img"/> 
+                           <!-- <small class="text-muted">Figura 1: Exemplos de símbolos do alfabeto Braille.</small>-->
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider"/>
+
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading"><span class="text-muted"></span></h2>
+                            <p class="lead text-right">A Figura 2 apresenta um exemplo de documento escrito usando o sistema Braille, e a leitura tátil sendo feita pela mão direita do leitor. 
+                                O exemplo de documento apresentado utiliza a impressão frente e verso.</p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="featurette-image img-fluid mx-auto" th:src="@{https://loremflickr.com/320/240}" alt="img"/> 
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+                        <p class="text-justify">
+                        As Figuras 3, 4 e 5 apresentam recursos utilizados para fazer a impressão dos caracteres do sistema Braille em folhas de papel.
+                        A Figura 3 apresenta uma reglete e punção, que permitem a escrita manual de cada um dos símbolos. A reglete é uma régua de 4 linhas e 28 celas com orifícios retangulares vazados que servem como guia às células Braille. 
+                        O punção é usado para pressionar o papel e formar o relevo, e refere-se a uma ponta de aço adaptada para a marcação dos pontos nos orifícios da reglete.
+                        Na escrita com a reglete, a cela é invertida para produzir os pontos em relevo na ordem da leitura.</p>
+
+                        <div class="row featurette">
+                            <div class="col-md-7">
+                                <h2 class="featurette-heading">Máquina de escrever em Braille</h2>
+                                <p class="lead text-justify">A Figura 3 apresenta um exemplo de máquina de escrever em Braille, uma máquina datilográfica também chamada de Perkins-Braille. Essa máquina de escrever possui somente nove teclas, e segundo Reily (2004, p, 154):
+                                    “A tecla central é utilizada para dar os espaços; a função da tecla da esquerda é mudar de linha e a da direita é fazer o retrocesso. As outras correspondem aos pontos 3, 2, 1 e 4, 5, 6, nessa ordem”.
+                                    Esses pontos referem-se a pontos da cela Braille.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="featurette-image img-fluid mx-auto" th:src="@{https://loremflickr.com/320/240}" alt="img"/> 
+                            </div>
+                        </div>
+
+
+                        <hr class="featurette-divider">
+                            </div>
+
+
+                            <!--<div class="container-fluid" id="conteudoOquee">  
+                                <div>
+                
+                
+                                    <p class="col-sm-12">
+                                    </p>
+                
+                                    <p>
+                
+                                    </p>
+                                </div>
+                            </div>-->
+                            </body>
+                            </html>

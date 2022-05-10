@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt"  xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  
+      layout:decorate="~{layout/layout-padrao}">  
+    <head>
+        <title>O que é</title>
+    </head>
+    <body>
+        <section layout:fragment="conteudo">  
+            <form action="@{o-que-e}" method="post"><!--object="${administrator}"--></form>
+            <div class="jumbotron"> 
+                <div class="container">
+                    <h1 class="display-3">O que é Deficiência Visual</h1>  
+                </div> 
+            </div>                 
+
+            <div class="container marketing" id="conteudo">  
+                <div>
+                    <p>A deficiência visual se divide em dois grupos: pessoas que apresentam baixa visão e
+                        pessoas com cegueira.
+                        Segundo a Portaria n. 3128 do Ministério da Saúde, Art. 1. Parágrafos 1 e 2 1 :</p>
+
+                    <p class="col-sm-12">
+                        § 1º Considera-se pessoa com deficiência visual aquela que apresenta
+                        baixa visão ou cegueira.
+                    </p>
+                    <p class="col-sm-12">
+                        § 2º Considera-se baixa visão ou visão subnormal, quando o valor da
+                        acuidade visual corrigida no melhor olho é menor do que 0,3 e maior
+                        ou igual a 0,05 ou seu campo visual é menor do que 20º no melhor
+                        olho com a melhor correção óptica (categorias 1 e 2 de graus de
+                        comprometimento visual do CID 10) e considera-se cegueira quando
+                        esses valores se encontram abaixo de 0,05 ou o campo visual menor
+                        do que 10º (categorias 3, 4 e 5 do CID 10).
+                    </p>
+
+                    <p>
+                        A acuidade visual e o campo visual são duas escalas oftalmológicas, através das quais
+                        os tipos de deficiência visual são classificados. Acuidade visual é o que se enxerga a
+                        determinada distância e campo visual é a amplitude da área alcançada pela visão.
+                        Dessa forma, o termo cegueira se refere a perda total da visão ou a uma extrema
+                        limitação da capacidade de enxergar.
+                        A pessoa que tem cegueira total tem perda completa da visão, também chamada de
+                        “visão zero”, sem a percepção luminosa.
+                        A pessoa que tem baixa visão ou visão subnormal tem a função visual comprometida,
+                        mas é capaz de usar a visão para executar tarefas, como por exemplo: ler textos
+                        impressos ampliados ou com o uso de recursos óticos, como por exemplo, a lupa.
+                    </p>
+                </div>
+            </div>
+        </section> 
+    </body>
+</html>
