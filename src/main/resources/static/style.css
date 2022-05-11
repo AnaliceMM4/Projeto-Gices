@@ -184,7 +184,8 @@ nav{
 
 #conteudo{
     width: 100%;/*1150px*/
-    font-size:18px;
+    font-size:20px;
+    font-family: Tajawal;
     text-align: justify;
     margin-bottom: 5%;
 }
@@ -264,7 +265,21 @@ footer{
     height:320px;
 }
 
+#pInformacaoCadastro{
+    font-size:15px;
+    text-align: justify-all;
+}
 
+#textoPagTecnologicos{
+    text-align: center;
+    font-size: 20px;
+    font-family: Tajawal;
+}
+
+#formatTexto{
+    font-size: 18px;
+    font-family: Tajawal;
+}
 
 
 
