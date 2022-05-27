@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="pt"  xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:th="http://www.thymeleaf.org"  
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  
+      layout:decorate="~{layout/layout-padrao}">  
+    <head>  
+        <title>Alunos e Egressos</title>
+    </head>  
+    <body>  
+        <section layout:fragment="conteudo">  
+            <div class="jumbotron">  
+                <div class="container">  
+                    <h1 class="display-4">Alunos/Egressos</h1>
+                </div>
+            </div>
+
+            <div class="container marketing" id="conteudo">  
+                <div>
+                    <h3 class="featurette-heading">Palestrante: Géssica Michelle dos Santos Pereira</h3>
+
+                    <p>Géssica Michelle dos Santos Pereira possui graduação em Engenharia Industrial Elétrica (ênfase em Eletrotécnica) 
+                        pela Universidade Tecnológica Federal do Paraná (UTFPR) (2010) e mestrado em Engenharia Elétrica pela Universidade Federal do Paraná (UFPR) (2015).
+                        Atualmente é pesquisadora da Divisão de Sistemas Elétricos dos Institutos Lactec. 
+                        Atua e tem interesse de pesquisas nas seguintes áreas: sistemas de distribuição desbalanceados, redes elétricas inteligentes e técnicas metaheurísticas.
+                        É a primeira deficiente visual do Brasil a se graduar em Engenharia Elétrica e receber mestrado em Engenharia Elétrica. 
+                        Também tem interesse em Tecnologia Assistiva com conceito de Desenho Universal aplicado a educação e cultura inclusiva de Pessoas com Deficiência Visual.
+                    </p>
+                    <a th:href="@{https://youtu.be/gbpyVFqsV5Q}">
+                        <p><strong>Link:</strong> https://youtu.be/gbpyVFqsV5Q</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </body> 
+</html>

@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.kafka.KafkaProperties.Admin;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,10 +18,7 @@ import projeto.Gices.model.Role;
 import projeto.Gices.model.Usuario;
 import projeto.Gices.repository.AdministratorRepository;
 import projeto.Gices.repository.UsuarioRepository;
-
-/*import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import projeto.Gices.model.Role;
-import org.springframework.stereotype.Service;*/
+import org.springframework.stereotype.Service;
 /**
  *
  * @author analice
@@ -41,16 +39,16 @@ public class ImplementsAdministratorDetailsService implements UserDetailsService
             throw new UsernameNotFoundException("Administrador não encontrado!");
         }
         // return administrator;
-        return administrator(administrator.getLogin(), administrator.getSenha(), true, true, true, true, administrator.getAuthorities());
+        return new User(administrator.getLogin(), administrator.getSenha(), true, true, true, true, administrator.getAuthorities());
     }
 
     //salva o administrator no banco de dados
     public Administrator save(Administrator admin) {
         Administrator administrator = new Administrator();
-        //administrator.setNome(admin.getNome());
-        //administrator.setEmail(admin.getEmail());
+        administrator.setNome(admin.getNome());
+        administrator.setEmail(admin.getEmail());
         administrator.setLogin(admin.getLogin());
-        administrator.setSenha(new BCryptPasswordEncoder().encode(administrator.getSenha()));
+        administrator.setSenha(new BCryptPasswordEncoder().encode(admin.getSenha()));
         List<Role> roles = new ArrayList<>();
         roles.add(new Role("ROLE_ADMIN"));
         administrator.setRoles(roles);
@@ -71,9 +69,5 @@ public class ImplementsAdministratorDetailsService implements UserDetailsService
             return null;
         }
      // return usuario;
-    }
-
-    private UserDetails administrator(String login, String senha, boolean b, boolean b0, boolean b1, boolean b2, Collection<? extends GrantedAuthority> authorities) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

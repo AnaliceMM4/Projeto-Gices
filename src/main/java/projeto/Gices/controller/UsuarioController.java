@@ -43,7 +43,7 @@ public class UsuarioController {
     @PostMapping("/cadastro")
     public String registerUserAccount(@Valid Usuario usuario, BindingResult result) {
         usuarioRepository.save(usuario);//usuarioService
-        return "redirect:/index";
+        return "redirect:/cadastro";
     }
     /*@PostMapping("/cadastro")
     public ResponseEntity<Usuario> teste(@Valid @RequestBody Usuario usuario, BindingResult result) {

@@ -39,6 +39,22 @@
     bottom: 82.59%;
 }
 
+#tituloPrincipal{
+    position: absolute;
+    left: 22%;
+    right: 15.92%;
+    top: 6.14%;
+    bottom: 85.27%;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 58px;
+    text-align: center;
+    color: #3D3A3A;
+}
+
+
 #imagemPrincipal{
     width: 100%;
     height:150%;
@@ -69,10 +85,9 @@ nav{
     color: #3D3A3A;
     /*font-weight: bold;*/
     text-align: center;
-
 }
 
-/*-------------ACESSIBLIDADE-------------------*/
+/*-------------ACESSIBiLIDADE-------------------*/
 #navbarAcessibilidade{
     top:1px;
     bottom: 55%;
@@ -109,6 +124,7 @@ nav{
          height:60px;
      }
  }*/
+/*---------- ÍCONES - TAMANHOS ----------*/
 #iconeLampada{
     height: 36px;
     width: 38px;
@@ -136,7 +152,7 @@ nav{
     top: 80px;
 }
 
-#iconeFerramentasDigitais{
+#iconeNav{
     height: 34px;
     width: 36px;
     left: 0px;
@@ -149,6 +165,8 @@ nav{
     left: 0px;
     top: 80px;
 }
+
+/*---------- TAMANHO DE CADA SUBPÁGINA ----------*/
 
 #subPagina{
     width:450px;
@@ -190,29 +208,6 @@ nav{
     margin-bottom: 5%;
 }
 
-
-#cardGrupodePesquisa{
-    height: 348px;
-    width: 1300px;
-    margin-left: 20px;
-    max-width: 100rem;
-    height: 24rem;
-    margin-bottom: 20%;
-    text-align: center;
-}
-
-h1{
-}
-
-h4{
-}
-
-h5{
-
-}
-/*
-font-family: Tajawal; font-size:20px;*/
-
 #contato{
     text-align: center;
     font-family: Tajawal;
@@ -220,25 +215,26 @@ font-family: Tajawal; font-size:20px;*/
     font-style: normal;
 }
 
+/*---------- RODAPÉ ----------*/
 footer{
     bottom: 0%;
     width:100%;
     flex-shrink: 0;
     text-align:center;
-    font-size:18px;
+    font-size:20px;
     font-family: Tajawal;
     padding:8px;
     background-color:#1B1919;
     color:#FFFFFF;
 }
 
+/*---------- ÍCONES DO RODAPÉ ----------*/
 #iconeGmail{
     height: 28px;
     width: 28px;
     left: 0px;
     top: 80px;
 }
-
 
 #iconeFacebook{
     height: 32px;
@@ -249,7 +245,14 @@ footer{
 
 #iconeYoutube{
     height: 28px;
-    width: 26px;
+    width: 24px;
+    left: 0px;
+    top: 80px;
+}
+
+#iconeYoutubePreto{
+    height: 50px;
+    width: 45px;
     left: 0px;
     top: 80px;
 }
@@ -257,12 +260,23 @@ footer{
 #iconeBraile2{
     height: 300px;
     width: 350px;
-
 }
 
 #slides{
     top: 20px;
+    width: 430px;
     height:320px;
+    /*left: 6.58%;
+    //right: 44.36%;
+    //top: 34.26%;
+    //bottom: 56.81%;*/
+}
+
+#textoGices{
+    left: 50%;
+    right: 10%;
+    top: 34.04%;
+    bottom: 15.07%;
 }
 
 #pInformacaoCadastro{
@@ -272,14 +286,55 @@ footer{
 
 #textoPagTecnologicos{
     text-align: center;
-    font-size: 20px;
-    font-family: Tajawal;
-}
-
-#formatTexto{
     font-size: 18px;
     font-family: Tajawal;
 }
 
+#formatTexto{
+    font-size: 20px;
+    font-family: Tajawal;
+    text-align: justify;
+}
+
+#imagens{
+    height: 300px;
+    width: 5000px;
+}
+
+#imagens2{
+    height: 450px;
+    width: 800px;
+}
+
+#cardGrupodePesquisa{
+    height: 150px;
+    width: 1050px;
+    
+    height: 24rem;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+#imagensGrupo{
+    height: 290px;
+    width: 300px;
+}
+
+#imagensGrupo2{
+    height: 300px;
+    width: 300px;
+}
+
+
+#formaOriginal{
+    font-size: 18px;
+    font-family: Tajawal;
+    text-align: justify;
+}
+
+#formatImg{
+    height: 130px;
+    width: 500px;
+}
 
 

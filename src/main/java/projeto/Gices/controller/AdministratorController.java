@@ -2,8 +2,6 @@ package projeto.Gices.controller;
 
 import javax.validation.Valid;
 import projeto.Gices.model.Administrator;
-import projeto.Gices.model.Conteudo;
-//import net.bytebuddy.utility.dispatcher.JavaDispatcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,12 +33,17 @@ public class AdministratorController {
         this.administratorRepository = administratorRepository;
     }
 
-   
-   
-    /*@PostMapping("/cadastro")
-    public String registerUserAccount(@Valid @Body Administrator administrator, BindingResult result) {
+    @GetMapping("/cadastroadmin")
+    public String showRegistrationForm(Model model, Administrator administrator) {
+        model.addAttribute(administrator);
+        return "cadastroadmin";
+    }
 
+    @PostMapping("/cadastroadmin")
+    public String registerUserAccount(@Valid Administrator administrator, BindingResult result) {
         administratorService.save(administrator);
-        return "redirect:/principal";
-    }*/
+        return "redirect:/login-admin";
+    }
+   
+   
 }

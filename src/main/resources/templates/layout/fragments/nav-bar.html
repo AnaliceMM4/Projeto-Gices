@@ -9,15 +9,16 @@
     <body>
         <section th:fragment="navbar">
             <div class="dropdown-menu-left ml-auto bg-light" id="navbarAcessibilidade">
-                <!--<a th:onclick="@{#}" class="text-dark ml-3"><i class="fas">A+ </i></a>
-                <a th:href="@{#}" class="text-dark ml-3"><i class="fas">A- </i></a>-->
                 <a th:href="@{/acessibilidade}" class="text-dark ml-3"><i class="fas">Acessibilidade</i></a>
-                <a class="text-dark ml-3"><i class="fas" id="altoContraste">Alto Contraste</i></a> 
-                <a class="text-dark col-md-3"><i class="fas" id="brancoPreto">Branco e Preto </i></a><!--th:href="@{#}"-->
+                <!--<a class="text-dark ml-3"><i class="fas" id="altoContraste">Alto Contraste</i></a> 
+                <a class="text-dark col-md-3"><i class="fas" id="brancoPreto">Branco e Preto </i></a>-->
                 <a th:href="@{/cadastro}" class="text-dark col-md-3"><i class="fas">Cadastre-se</i></a>
             </div>
 
+
             <img th:src="@{/principalf.png}" alt="imagem principal" id="imagemPrincipal"/>
+            <h1 id="tituloPrincipal">Grupo para Inclusão de Cegos no Ensino Superior</h1>
+
             <a th:href="@{/}" id="logo"><img th:src="@{/logoCo.png}" class="img-fluid" alt="logo"/></a>
 
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -50,19 +51,19 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle ml-4" id="navbarP" data-toggle="dropdown">
+                                <a class="nav-link ml-4 dropdown-toggle" id="navbarP" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     DEPOIMENTOS
                                 </a>
                                 <div class="dropdown-menu text bg-light" aria-labelledby="navbarSubpaginas">
-                                    <a class="bg-light dropdown-item" id="subPagina">Professores <!--th:href="@{#}"-->
-                                        <!--<img th:src="@{#}" alt="Ícone de uma lâmpada" id=""/>-->
+                                    <a class="bg-light dropdown-item" id="subPagina" th:href="@{/depoimentos-professores}">Professores
+                                        <img th:src="@{/iconeProfessor.png}" alt="Ícone de professor" id="iconeNav"/>
                                     </a>
-                                    <a class="bg-light dropdown-item" id="subPagina">Alunos cegos
-                                        <!-- <img th:src="@{#}"  alt="Ícone de martelo" id=""/>-->
+                                    <a class="bg-light dropdown-item" id="subPagina" th:href="@{/depoimentos-alunos-e-egressos}">Alunos/Egressos
+                                        <img th:src="@{/iconeALuno.png}"  alt="Ícone de aluno" id="iconeNav"/>
                                     </a>
                                 </div>
                             </li>
-
+                            
                             <li class="nav-item dropdown">
                                 <!--<a class="nav-link dropdown-toggle ml-4" id="navbarP" data-toggle="dropdown">-->
                                 <a class="nav-link ml-4 dropdown-toggle" id="navbarP" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,10 +71,12 @@
                                 </a>
 
                                 <div class="dropdown-menu bg-light" aria-labelledby="navbarSubpaginas">
-                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/recursos-tecnologicos}">Tecnológicos
-                                        <img th:src="@{/iconeFerramentasD.png}" class="img-fluid" alt="Ícone de ferramentas" id="iconeFerramentasDigitais"/>
+                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/recursos-classicos}">Clássicos
+                                        <img th:src="@{/iconeRecurso.png}" class="img-fluid" alt="Ícone de ferramentas" id="iconeNav"/>
                                     </a>
-                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/materiais-concretos}">Materiais concretos
+                                    <a class="bg-light dropdown-item" id="subPagina3" th:href="@{/recursos-alternativos}">Alternativos
+                                        <img th:src="@{/iconeRecurso.png}" class="img-fluid" alt="Ícone de recurso alternativos" id="iconeNav"/>
+
                                     </a>
                                 </div>
                             </li>

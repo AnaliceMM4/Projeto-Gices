@@ -65,16 +65,28 @@ public class ConteudoController {
         return "processo-de-ensino-aprendizagem";
     }
 
-    @GetMapping("/recursos-tecnologicos")
+    @GetMapping("/depoimentos-professores")
+    public String showDepoimentosProfessores(Model model, Conteudo conteudo) {
+        model.addAttribute("conteudos", conteudo);
+        return "professores";
+    }
+    
+    @GetMapping("/depoimentos-alunos-e-egressos")
+    public String showDepoimentosAlunosEgressos(Model model, Conteudo conteudo) {
+        model.addAttribute("conteudos", conteudo);
+        return "alunos";
+    }
+    
+    @GetMapping("/recursos-classicos")
     public String showRecursosTecnologicos(Model model, Conteudo conteudo) {
         model.addAttribute("conteudos", conteudo);
-        return "tecnologicos";
+        return "classicos";
     }
 
-    @GetMapping("/materiais-concretos")
+    @GetMapping("/recursos-alternativos")
     public String showMateriaisConcretos(Model model, Conteudo conteudo) {
         model.addAttribute("conteudos", conteudo);
-        return "materiais-concretos";
+        return "alternativos";
     }
 
     @GetMapping("/lives")

@@ -11,66 +11,19 @@
     <body>  
         <section layout:fragment="conteudo">  
 
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" id="slides">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 bg-secondary" id="iconeBraile2" alt="Primeiro Slide"/>
-                        <div class="carousel-caption d-none d-md-block"> <!--th:src="@{iconeBraile.jpg}--> 
-                            <h5>Primeiro slide</h5>
-                            <p>Este é o primeiro slide</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 bg-secondary"  id="iconeBraile2" alt="Segundo Slide"/><!--th:src="@{/iconeMartelo.png}"-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Segundo slide</h5>
-                            <p>Este é o segundo slide</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 bg-secondary" id="iconeBraile2" alt="Terceiro Slide"/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Terceiro slide</h5>
-                            <p>Este é o terceiro slide</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-            </div>
-
-            <!--<div sec:authorize="isAuthenticated()">
-                <h3>Olá, [[${#httpServletRequest.remoteUser}]]!</h3>
-            </div>-->
-           <!-- <div class="menu-item menu-item-left col-md-3 col-ml-3 navbar">
-                <a th:href="@{/login-admin}">Login
-                    <i class="fa fa-user fa-2x ml-auto text-dark fa-left"></i>
-                </a>
-            </div>-->
-            <div class="container marketing">
+            <div class="container marketing" id="formatTexto">
+   
                 <hr class="featurette-divider"/>
-                <div class="row" id="conteudo">
-                    <div class="text-center">
-                        <h1>Sobre o GICES</h1>
-                        <p class=""> O GICES - Grupo para Inclusão de Cegos no Ensino Superior se refere a um projeto
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h1 class="featurette-heading text-center">GICES</h1>
+                        <p>O GICES - Grupo para Inclusão de Cegos no Ensino Superior se refere a um projeto
                             de extensão em equipe da UTFPR, campus Pato Branco que tem como objetivo
                             compartilhar informações sobre experiências de professores e pesquisadores nesta
                             temática da inclusão de alunos cegos nos cursos de Matemática, Física e Engenharia,
                             e, também compartilhar experiências de acadêmicos e profissionais cegos atuantes no
                             mercado de trabalho nestas áreas.
-                        </p>
-                        <p class="">
                             Esse grupo foi formado em 2021 e é composto pelas professoras Dra. Eliane De
                             Bortoli Fávero (DAINF/NAI), Dra. Rúbia Eliza de Oliveira Schultz Ascari (DAINF/NAI),
                             Ms. Mirélia Flausino Vogel (coordenadora do NAI, campus Pato Branco) e coordenado
@@ -86,11 +39,87 @@
                             de experiências e reflexões sobre a inclusão de alunos cegos em cursos da área de
                             exatas.
                         </p>
-                    </div>                  
-                </div>          
-            </div>                  
+                    </div>
+                    <div class="col-md-5 text-right">
+
+                        <div  id="slides" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 bg-secondary" id="iconeBraile2" alt="Primeiro Slide"/>
+                                    <div class="carousel-caption d-none d-md-block"> <!--th:src="@{iconeBraile.jpg}--> 
+                                        <h5>Primeiro slide</h5>
+                                        <p>Este é o primeiro slide</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 bg-secondary"  id="iconeBraile2" alt="Segundo Slide"/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Segundo slide</h5>
+                                        <p>Este é o segundo slide</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 bg-secondary" id="iconeBraile2" alt="Terceiro Slide"/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Terceiro slide</h5>
+                                        <p>Este é o terceiro slide</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        
+                        <hr class="featurette-divider"/>
+
+                        <div class="text-center">
+                            <h4 class="featurette-heading">Siga as nossas redes sociais!</h4>
+
+                            <a th:href="@{https://www.facebook.com/grupoinclusaocegosensinosupeior}">
+                                <img th:src="@{/iconeFacebookPreto.png}" class="img-fluid" alt="Ícone do facebook" id="iconeFacebook"/>
+                            </a>
+
+                            <a th:href="@{https://www.youtube.com/channel/UCUSn4oXKabNlkf93ORXlB4w}">
+                                <img th:src="@{/iconeYoutubePreto.png}" class="img-fluid" alt="Ícone do youtube" id="iconeYoutubePreto"/>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--<div sec:authorize="isAuthenticated()">
+                <h3>Olá, [[${#httpServletRequest.remoteUser}]]!</h3>
+            </div>-->
+            <!-- <div class="menu-item menu-item-left col-md-3 col-ml-3 navbar">
+                 <a th:href="@{/login-admin}">Login
+                     <i class="fa fa-user fa-2x ml-auto text-dark fa-left"></i>
+                 </a>
+             </div>-->
 
 
+
+            <div class="nav-item dropdown ml-auto ">
+                <div>   
+                    <h1 sec:authorize="isAuthenticated()" class="btn btn-outline-light btn-lg ml-auto nav-link text-capitalize font-weight-bold" data-toggle="dropdown"> [[${#httpServletRequest.remoteUser}]]</h1>
+                    <div class="dropdown-menu dropdown-menu-right bg-light">
+                        <form th:action="@{/logout}"  method="post" sec:authorize="isAuthenticated()">
+                            <button type="submit" class="bg-dark text-light dropdown-item">Logout</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>           
             <!--<div class="nav-item dropdown ml-auto">
                 <div>   
                     <h1 sec:authorize="isAuthenticated()" class="btn btn-outline-light btn-lg ml-auto nav-link text-capitalize font-weight-bold" data-toggle="dropdown"> [[${#httpServletRequest.remoteUser}]]</h1>

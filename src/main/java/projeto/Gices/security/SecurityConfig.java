@@ -20,7 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(securedEnabled = true)  
+//@EnableGlobalMethodSecurity(securedEnabled = true)  
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -43,12 +43,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/legislacao/**").permitAll()
                 .antMatchers("/deficientes-visuais/**").permitAll()
                 .antMatchers("/processo-de-ensino-aprendizagem/**").permitAll()
-                .antMatchers("/tecnologicos/**").permitAll()
-                .antMatchers("/materiais-concretos/**").permitAll()
+                .antMatchers("/recursos-classicos/**").permitAll()
+                .antMatchers("/recursos-alternativos/**").permitAll()
                 .antMatchers("/lives/**").permitAll()
                 .antMatchers("/grupo-de-pesquisa/**").permitAll()
                 .antMatchers("/acessibilidade/**").permitAll()
                 .antMatchers("/cadastro/**").permitAll()
+                .antMatchers("/cadastroadmin/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling().accessDeniedPage("/403")
@@ -71,7 +72,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/webjars/**");
     }
 
-    @Bean
+    /*@Bean
     @Override
     protected UserDetailsService userDetailsService() {
         return ads;//
@@ -86,7 +87,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService())//ou ads
                 .passwordEncoder(passwordEncoder());
+    }*/
+    
+   
+    @Override
+    public void configure(AuthenticationManagerBuilder auth)
+            throws Exception {
+        auth.userDetailsService(ads)
+        .passwordEncoder(passwordEncoder());
+                
     }
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+    
     /*@Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth)
             throws Exception {
