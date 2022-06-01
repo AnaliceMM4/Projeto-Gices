@@ -23,8 +23,8 @@
         display: block;
         margin-bottom: 20px;
     }
-    
-   
+
+
 }
 
 /*.container{
@@ -43,9 +43,9 @@
 
 #tituloPrincipal{
     position: absolute;
-    left: 24.80%;
+    left: 24.90%;
     right: 20.85%;
-    top: 7.40%;
+    top: 8.05%;
     bottom: 86%;
     font-family: Candara;
     font-style: normal;
@@ -58,8 +58,10 @@
 
 
 #imagemPrincipal{
-    width: 100%;
-    height:150%;
+    left: 0%;
+    right: 0.14%;
+    top: 3.01%;
+    bottom: 80.92%;
 }
 
 #altoContraste{
@@ -311,7 +313,7 @@ footer{
 #cardGrupodePesquisa{
     height: 150px;
     width: 1050px;
-    
+
     height: 24rem;
     margin-bottom: 20%;
     text-align: center;
