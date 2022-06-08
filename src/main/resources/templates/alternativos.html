@@ -120,34 +120,43 @@
                     especificar que o perímetro de uma circunferência é 2πR, ao invés de utilizar a letra grega π,
                     o usuário escreveria o comando \pi.</p>
 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body" id="formaOriginal">
-                                <h4 class="d-flex">Forma original</h4>
-                                <p>onde $D(x, y, t)$ é uma imagem binária que compreende a diferença de intensidade de</p>
-                                <p>\emph{pixel} dos quadros separados pela distância temporal $\Delta$, definida na Equação</p>
-                                <p>\eqref{eqD}:</p>
-                                <p>\begin{equation}</p>
-                                <p>  D(x, y, z) = |I(x,y,t) - I(x,y,t\pm \Delta)|</p>
-                                <p>\label{eqD}</p>
-                                <p>\end{equation}</p>
-                                <p>onde $I(x, y, t)$ é o valor da intensidade do \emph{pixel} $(x, y)$ no quadro $t_{th}$ da sequência da imagem.</p>
+
+                <div class="card card-signin border-secondary my-5">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="d-flex">Forma original</h4>
+                                        <div id="formaOriginal">
+                                            <p>onde $D(x, y, t)$ é uma imagem binária que compreende a diferença de intensidade de</p>
+                                            <p>\emph{pixel} dos quadros separados pela distância temporal $\Delta$, definida na Equação</p>
+                                            <p>\eqref{eqD}:</p>
+                                            <p>\begin{equation}</p>
+                                            <p>  D(x, y, z) = |I(x,y,t) - I(x,y,t\pm \Delta)|</p>
+                                            <p>\label{eqD}</p>
+                                            <p>\end{equation}</p>
+                                            <p>onde $I(x, y, t)$ é o valor da intensidade do \emph{pixel} $(x, y)$ no quadro $t_{th}$ da sequência da imagem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Forma compilada</h4>
+                                        <img class="featurette-image img-fluid mx-auto" id="formatImg" th:src="@{formaCompilada.png}" alt="img"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md text-center">
+                                <small>Figura 2: Exemplo de texto produzido no sistema LaTeX, apresentando a sua forma original e sua forma compilada.</small>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Forma compilada</h4>
-                                <img class="featurette-image img-fluid mx-auto" id="formatImg" th:src="@{formaCompilada.png}" alt="img"/>
-                            </div>
-                        </div>
-                        <small>Figura 2: Exemplo de texto produzido no sistema LaTeX, apresentando a sua forma original e sua forma compilada.</small>
                     </div>
                 </div>
 
-                <p>Dessa forma, conhecendo os comandos do LaTeX usuários com deficiência visual podem
+                <p class="mx-auto">Dessa forma, conhecendo os comandos do LaTeX usuários com deficiência visual podem
                     reconhecer por meio de leitor de tela, equações digitadas em um texto em LaTeX.
                     De Carvalho, do Couto e Camargo (2018) investigaram as potencialidades e limitações do
                     uso do LaTeX no contexto de leitura e resolução de exercícios de Física por alunos com

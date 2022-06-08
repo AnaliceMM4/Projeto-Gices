@@ -325,13 +325,13 @@ footer{
 
 
 #formaOriginal{
-    font-size: 18px;
-    font-family: Tajawal;
+    font-size: 15px;
+    font-family: Courier New;
     text-align: justify;
 }
 
 #formatImg{
-    height: 130px;
+    height: 120px;
     width: 500px;
 }
 
@@ -344,4 +344,5 @@ footer{
 h1{
     font-family: Calibri;
 }
+
 
