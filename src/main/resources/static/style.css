@@ -43,18 +43,17 @@
 
 #tituloPrincipal{
     position: absolute;
-    left: 32%;
+    left: 35%;
     right: 2%;
     top: 18%;
     bottom: 78%;
     font-family: Candara;
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 60px;
     color: #3D3A3A;
 }
-
 
 #imagemPrincipal{
     /*left: 0%;
