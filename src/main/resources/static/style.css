@@ -43,15 +43,15 @@
 
 #tituloPrincipal{
     position: absolute;
-    left: 24.90%;
-    right: 20.85%;
-    top: 8.05%;
-    bottom: 86%;
+    left: 35%;
+    right: 2;
+    top: 18%;
+    bottom: 78%;
     font-family: Candara;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 60px;
     text-align: center;
     color: #3D3A3A;
 }
@@ -93,9 +93,9 @@ nav{
     top:1px;
     bottom: 55%;
     background-image: rgba(238, 235, 235, 1);
-    font-size:13px;
+    font-size:14px;
     font-weight: bold;
-    font-family: Tajawal;
+    font-family: Candara;
     line-height: 22px;
     text-align: right;
 }
@@ -106,7 +106,7 @@ nav{
     top: 30%;
     bottom: 94.75%;
     font-size:30px;
-    font-family: Tajawal;
+    font-family: Candara;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
