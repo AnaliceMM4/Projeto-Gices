@@ -43,20 +43,20 @@
                     <div class="col-md-5 text-right">
 
                         <div  id="slides" class="carousel slide" data-ride="carousel">
-                           <!-- <ol class="carousel-indicators">
+                           <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>-->
+                            </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block w-100 bg-secondary" th:src="@{eventoConexao.jpeg}" id="iconeBraile2" alt="Primeiro Slide"/>
-                                    <div class="carousel-caption d-none d-md-block"> <!--th:src="@{iconeBraile.jpg}--> 
+                                    <div class="carousel-caption d-none d-md-block">  
                                         <h5>Primeiro slide</h5>
                                         <p>Este é o primeiro slide</p>
                                     </div>
                                 </div>
-                                <!--<div class="carousel-item">
+                                <div class="carousel-item">
                                     <img class="d-block w-100 bg-secondary"  id="iconeBraile2" alt="Segundo Slide"/>
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Segundo slide</h5>
@@ -78,7 +78,7 @@
                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Próximo</span>
-                            </a>-->
+                            </a>
                         </div>
                         
                         <hr class="featurette-divider"/>
@@ -106,9 +106,6 @@
                      <i class="fa fa-user fa-2x ml-auto text-dark fa-left"></i>
                  </a>
              </div>-->
-
-
-
             <div class="nav-item dropdown ml-auto ">
                 <div>   
                     <h1 sec:authorize="isAuthenticated()" class="btn btn-outline-light btn-lg ml-auto nav-link text-capitalize font-weight-bold" data-toggle="dropdown"> [[${#httpServletRequest.remoteUser}]]</h1>
