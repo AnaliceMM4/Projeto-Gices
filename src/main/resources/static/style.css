@@ -29,10 +29,11 @@
 
 #logo{
     position: absolute;
-    left: 2.6%;
-    right: 83.74%;
-    top: 3.3%;
-    bottom: 82.59%;
+    left: 1%;
+    right: 84%;
+    top: 6%;
+    bottom: 83%;
+    width: 22%;
 }
 
 #tituloPrincipal{
@@ -53,9 +54,10 @@
     /*left: 0%;
     right: 0.14%;
     top: 3.01%;
-    bottom: 80.92%;*/
+    bottom: 80.92%;
     width: 1380px;
-    height: 180px;
+    height: 180px;*/
+    width: 100%;
     left: 0px;
     top: 0px;
     /* width: 100%;
@@ -85,8 +87,7 @@ nav{
     top:1px;
     bottom: 55%;
     background-image: rgba(238, 235, 235, 1);
-    font-size:14px;
-    font-weight: bold;
+    font-size:15px;
     font-family: Candara;
     line-height: 22px;
     text-align: right;
