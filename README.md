@@ -1,2 +1,2 @@
 # Projeto-Gices
-Tenho desenvolvido esse site utilizando Java, Spring Boot, Spring MVC, CSS, Bootstrap e Thymeleaf. 
+Tenho desenvolvido esse site utilizando Java, Spring Boot, Spring MVC, HTML, CSS, Bootstrap e Thymeleaf. 
