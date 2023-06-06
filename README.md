@@ -6,9 +6,11 @@ As atividades estão relacionadas com todo o desenvolvimento e estrutura que um 
 ##
 
  <h3>Tela da Página Principal </h3>
-![website-gices](https://github.com/AnaliceMM4/Projeto-Gices/assets/62485958/ef8161f4-bc49-4e0d-905d-bc6f023413e5)
+![website-gices]
+(https://github.com/AnaliceMM4/Projeto-Gices/assets/62485958/ef8161f4-bc49-4e0d-905d-bc6f023413e5)
 
 ##
 
  <h3>Tela de Cadastro para quem quer receber notícias e mais informações sobre o Grupo para Inclusão de Cegos no Ensino Superior(GICES). </h3>
-![cadastrogices](https://github.com/AnaliceMM4/Projeto-Gices/assets/62485958/201b4fdf-777f-408f-97d7-0b05fde9d56f)
+![cadastrogices]
+(https://github.com/AnaliceMM4/Projeto-Gices/assets/62485958/201b4fdf-777f-408f-97d7-0b05fde9d56f)
